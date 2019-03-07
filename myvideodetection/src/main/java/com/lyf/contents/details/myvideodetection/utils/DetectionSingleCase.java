@@ -1,4 +1,4 @@
-package com.lyf.content.web.videodetection.utils;
+package com.lyf.contents.details.myvideodetection.utils;
 
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
@@ -6,7 +6,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.cry.mediametaretriverwrapper.MediaMetadataRetrieverWrapper;
 import com.cry.mediametaretriverwrapper.RetrieverProcessThread;
-import com.lyf.content.web.videodetection.utils.VideoDetectionUtils.VideoDetectionCallBack;
+import com.lyf.contents.details.myvideodetection.utils.VideoDetectionUtils.VideoDetectionCallBack;
 import java.util.ArrayList;
 import java.util.List;
 

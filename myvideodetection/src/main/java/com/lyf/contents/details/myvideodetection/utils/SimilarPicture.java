@@ -1,4 +1,4 @@
-package com.lyf.content.web.videodetection.utils;
+package com.lyf.contents.details.myvideodetection.utils;
 
 import android.graphics.Bitmap;
 

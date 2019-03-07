@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.lyf.content.web.videodetection.utils.VideoDetectionUtils;
-import com.lyf.content.web.videodetection.utils.VideoDetectionUtils.VideoDetectionCallBack;
+import com.lyf.contents.details.myvideodetection.utils.VideoDetectionUtils;
+import com.lyf.contents.details.myvideodetection.utils.VideoDetectionUtils.VideoDetectionCallBack;
 import java.util.ArrayList;
 import java.util.List;
 
