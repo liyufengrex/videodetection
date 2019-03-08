@@ -26,6 +26,7 @@ class DetectionSingleCase {
     private String preRes = null;
     private List<Integer> results = new ArrayList<Integer>(10);
     private int level = 5;
+    private MediaMetadataRetrieverWrapper metadataRetriever2;
 
     public DetectionSingleCase(String sourcePath, int level, VideoDetectionCallBack callBack) {
         this.sourcePath = sourcePath;
@@ -37,7 +38,7 @@ class DetectionSingleCase {
         if (TextUtils.isEmpty(this.sourcePath)) {
             return;
         }
-        MediaMetadataRetrieverWrapper metadataRetriever2 = new MediaMetadataRetrieverWrapper();
+        metadataRetriever2 = new MediaMetadataRetrieverWrapper();
         metadataRetriever2.setDataSource(sourcePath);
         metadataRetriever2
                 .getFramesInterval(interval, scale, new RetrieverProcessThread.BitmapCallBack() {
@@ -48,6 +49,9 @@ class DetectionSingleCase {
 
                     @Override
                     public void onEnd() {
+                        if(metadataRetriever2 != null){
+                            metadataRetriever2.release();
+                        }
                         checkSimilar();
                     }
                 });
